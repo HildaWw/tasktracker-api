@@ -1,4 +1,4 @@
-package com.hildawong.tasktracker.entity;
+package com.hildawong.tasktracker_api.entity;
 
 public enum TaskStatus {
     TODO,

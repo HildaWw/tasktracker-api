@@ -1,4 +1,4 @@
-package com.hildawong.tasktracker.entity;
+package com.hildawong.tasktracker_api.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
