@@ -1,4 +1,4 @@
-package com.hildawong.tasktracker_api;
+package com.hildawong.tasktracker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class TasktrackerApiApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(TasktrackerApiApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(TasktrackerApiApplication.class, args);
+    }
 
 }

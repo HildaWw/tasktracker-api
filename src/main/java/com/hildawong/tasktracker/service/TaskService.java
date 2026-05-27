@@ -1,14 +1,15 @@
-package com.hildawong.tasktracker_api.service;
+package com.hildawong.tasktracker.service;
 
-import com.hildawong.tasktracker_api.dto.TaskRequestDTO;
-import com.hildawong.tasktracker_api.dto.TaskResponseDTO;
-import com.hildawong.tasktracker_api.entity.Task;
-import com.hildawong.tasktracker_api.exception.TaskNotFoundException;
-import com.hildawong.tasktracker_api.repository.TaskRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+
+import com.hildawong.tasktracker.dto.TaskRequestDTO;
+import com.hildawong.tasktracker.dto.TaskResponseDTO;
+import com.hildawong.tasktracker.entity.Task;
+import com.hildawong.tasktracker.exception.TaskNotFoundException;
+import com.hildawong.tasktracker.repository.TaskRepository;
 
 import java.time.LocalDateTime;
 

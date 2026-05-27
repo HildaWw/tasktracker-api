@@ -1,4 +1,4 @@
-package com.hildawong.tasktracker_api.exception;
+package com.hildawong.tasktracker.exception;
 
 public class TaskNotFoundException extends RuntimeException {
 

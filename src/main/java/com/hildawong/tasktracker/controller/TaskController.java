@@ -1,12 +1,10 @@
-package com.hildawong.tasktracker_api.controller;
+package com.hildawong.tasktracker.controller;
 
-import com.hildawong.tasktracker_api.dto.TaskRequestDTO;
-import com.hildawong.tasktracker_api.dto.TaskResponseDTO;
-import com.hildawong.tasktracker_api.service.TaskService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,9 +15,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.hildawong.tasktracker.dto.TaskRequestDTO;
+import com.hildawong.tasktracker.dto.TaskResponseDTO;
+import com.hildawong.tasktracker.service.TaskService;
+
 @RestController
 @RequestMapping("/api/tasks")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*")
 public class TaskController {
 
     private final TaskService taskService;

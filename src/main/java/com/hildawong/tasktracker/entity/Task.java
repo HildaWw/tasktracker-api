@@ -1,28 +1,37 @@
-package com.hildawong.tasktracker_api.dto;
+package com.hildawong.tasktracker.entity;
 
-import com.hildawong.tasktracker_api.entity.TaskPriority;
-import com.hildawong.tasktracker_api.entity.TaskStatus;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
+@Entity
+@Table(name = "tasks")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class TaskResponseDTO {
+public class Task {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(nullable = false)
     private String title;
+
     private String description;
+
+    @Enumerated(EnumType.STRING)
     private TaskStatus status;
+
+    @Enumerated(EnumType.STRING)
     private TaskPriority priority;
+
     private LocalDateTime dueDate;
+
     private LocalDateTime createdAt;
+
     private LocalDateTime updatedAt;
 }

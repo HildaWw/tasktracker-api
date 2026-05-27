@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.hildawong</groupId>
-	<artifactId>tasktracker-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>TaskTracker-API</artifactId>
+	<version>1.0.0</version>
 	<name/>
 	<description/>
 	<url/>

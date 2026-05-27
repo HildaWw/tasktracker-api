@@ -1,4 +1,4 @@
-package com.hildawong.tasktracker_api;
+package com.hildawong.tasktracker;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
